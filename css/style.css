@@ -1,0 +1,423 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  text-align: center;
+  font-family: 'Didact Gothic', Helvetica, sans-serif;
+  font-size: 1em;
+  color: #4a4a4a;
+  background-color: #FFF6F3;
+  width: 100%;
+}
+
+
+/* ===============
+    LAYOUT CONTAINERS
+=================== */
+
+
+.wrapper {
+  min-width: 320px;
+  background-color: #FFF6F3;
+  margin: 0;
+}
+
+.header {
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  background: white;
+  padding-bottom: 20px;
+}
+.contact {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 60px;
+  background-color: #FFF6F3;
+}
+
+.footer-mobile {
+  background-color: #FFF6F3;
+  font-family: 'Crete Round', 'Didact Gothic', serif;
+  font-size: 1em;
+  color: #4a4a4a;
+  padding-top: 30px;
+  margin: 20px;
+  border-top: 1px solid #7f7f7f;
+
+}
+
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+  transition: all .3s;
+}
+
+a:hover {
+  font-weight: bolder;
+  font-size: 1em;
+  transform: scale(1.1);
+}
+
+a:active {
+ color: #dc76f6;
+}
+
+
+/* Section Styles */
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-family: 'Crete Round', 'Didact Gothic', serif;
+  font-size: 2.2em;
+  color: #4a4a4a;
+  text-align: center;
+}
+h2 {
+  padding: 30px 0 20px 0;
+  font-family: 'Crete Round', 'Didact Gothic', serif;
+  font-size: 1.5em;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Didact Gothic', serif;
+  font-size: 1.9em;
+  font-weight: lighter;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Crete Round', 'Didact Gothic', serif;
+  font-size: 1.2em;
+  color: #4a4a4a;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.feature-image {
+  width: 90%;
+  margin: 40px auto 30px;
+}
+
+p {
+    font-family: 'Didact Gothic', Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.7;
+    padding: 0 15%;
+    color: #7f7f7f;
+  }
+
+ul {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.profile {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.nav li {
+  list-style-type: none;
+  border-radius: 10px;
+  background: white;
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: #4a4a4a;
+}
+
+.nav a {
+  display: block;
+  padding: 15px;
+  margin: 10px 30px;
+}
+
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+.contact-bold {
+  font-family: 'Crete Round', serif;
+}
+
+.footer-mobile .name {
+    float: left;
+}
+
+.footer-mobile .back {
+  float: right;
+}
+
+
+
+/* =========
+MEDIA QUERIES
+============ */
+/*
+Breakpoint for tablets & mobile phones in landscape mode */
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-large,
+  .big-nav {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  h3 {
+   font-size: 1.8em;
+   }
+
+  .main-nav ul {
+    display: inline-block;
+  }
+
+  .nav li {
+    display: block;
+    float: left;
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: #FFF6F3;
+    color: #4a4a4a;
+  }
+
+  .bio {
+   text-align: left;
+   font-size: 1.6em;
+   padding: 0;
+   margin-left: 15px;
+  }
+
+  .profile {
+   width: 40%;
+   margin-left: 35px;
+   float: right;
+ }
+
+  .showcase,
+  .hobby {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+  }
+
+  .feature-image {
+    width: 90%;
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  .marketing
+  .travel
+  .gallery
+  .yoga {
+    float: left;
+  }
+
+
+  .contact p {
+    padding: 0 15%;
+  }
+
+  .footer-mobile,
+  .big-nav {
+    display: none;
+  }
+
+
+.footer-large {
+  margin: 30px 45px;
+  padding-top: 30px;
+  border-top: 1px solid #7f7f7f;
+
+}
+
+.footer-large h4,
+.footer-large li,
+.footer-large ul {
+  display: inline;
+}
+
+.footer-large h4 {
+  font-size: 1.1em;
+  float: left;
+}
+
+
+.footer-large li {
+  font-family: 'Crete Round', 'Didact Gothic', serif;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0 10px;
+  float: right;
+ }
+
+}
+
+/*
+Breakpoint for desktop display
+ */
+
+@media (min-width: 1024px) {
+
+  h1 {
+    display: inline;
+    float: left;
+  }
+
+ .main-nav ul {
+   display: inline;
+   margin: 0;
+ }
+
+ .big-nav li {
+   display: inline;
+   background-color: #FFF6F3;
+   color: #4a4a4a;
+   float: right;
+ }
+
+ .big-nav a {
+   text-decoration: none;
+   padding: 20px 30px 30px 30px;
+   margin: 0;
+   color: #4a4a4a;
+   transition: all .3s;
+   display: inline-block;
+ }
+
+ a:hover {
+   font-weight: bolder;
+   font-size: 1em;
+   transform: scale(1.1);
+ }
+
+ a:active {
+  color: #dc76f6;
+ }
+
+ .bio {
+  text-align: left;
+  font-size: 1.6em;
+  padding: 0;
+  margin-left: 15px;
+ }
+
+ .profile {
+  width: 35%;
+  margin-left: 100px;
+  float: right;
+}
+
+  .showcase {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+  }
+
+  .feature {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .showcase h3 {
+    font-size: 1.8em;
+  }
+
+  .showcase p {
+    font-size: 1.3em;
+  }
+
+  .feature-image {
+    width: 90%;
+    margin: 10px auto;
+    padding: 0;
+  }
+
+
+  .marketing
+  .map
+  .yoga {
+    float: left;
+}
+
+.hobby {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+
+
+
+.contact p {
+  font-size: 1.5em;
+  padding: 0 25%;
+}
+
+
+.footer-mobile,
+.nav {
+  display: none;
+}
+
+.footer-large {
+  margin: 30px 45px;
+  padding-top: 30px;
+  border-top: 1px solid #7f7f7f;
+
+}
+
+.footer-large h4,
+.footer-large li,
+.footer-large ul {
+  display: inline;
+}
+
+.footer-large h4 {
+  font-size: 1.1em;
+  float: left;
+}
+
+
+.footer-large li {
+  font-family: 'Crete Round', 'Didact Gothic', serif;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0 10px;
+  float: right;
+}
+
+
+
+}
+
+
+/* for side-by-side name with nav bar, go to: https://teamtreehouse.com/library/positioning-elements-sidebyside-with-inline-display */
+
+
+  /* =========
+  CLEARFIX
+  ============ */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
